@@ -72,17 +72,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-6 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-600 dark:text-slate-400">
-          <p className="flex items-center gap-1.5 font-medium">
+        <div className="pt-6 border-t border-slate-200 dark:border-slate-800 flex items-center justify-center text-xs text-slate-600 dark:text-slate-400">
+          <p className="flex items-center gap-1.5 font-medium text-center">
             <i className="fa-regular fa-copyright"></i>
             <span>تمامی حقوق برای فروشگاه ساده‌مارکت محفوظ است.</span>
           </p>
-          <div className="flex items-center gap-4">
-            <span className="flex items-center gap-1.5 font-medium">
-              <i className="fa-solid fa-bolt text-amber-500"></i>
-              <span>طراحی سریع و مینیمال</span>
-            </span>
-          </div>
         </div>
       </div>
     </footer>
