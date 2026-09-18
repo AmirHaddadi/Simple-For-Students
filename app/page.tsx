@@ -81,34 +81,34 @@ export default function HomePage() {
         <Hero />
 
         {/* Short Introduction Section */}
-        <section className="py-12 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 transition-colors">
+        <section className="py-14 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 transition-colors">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center space-y-4">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 dark:bg-blue-950/70 border border-blue-200/50 dark:border-blue-900/50 text-blue-600 dark:text-blue-400">
                 <i className="fa-solid fa-circle-check"></i>
-                <span>چرا ساده‌مارکت؟</span>
+                <span>مزایای خرید از ساده‌مارکت</span>
               </span>
-              <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
                 خرید مطمئن، شفاف و بدون پیچیدگی
               </h2>
               <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
-                ما در ساده‌مارکت تلاش کرده‌ایم بدون المان‌های مزاحم و تبلیغات اضافه، تجربه خریدی متمرکز و صریح را برای کاربران فراهم کنیم. کلیه امکانات برای سهولت شما عزیزان بهینه شده‌اند.
+                ما در ساده‌مارکت متعهد به ارائه بهترین خدمات و بالاترین کیفیت هستیم. تجربه خریدی لذت‌بخش و بی‌دغدغه اولویت نخست ماست.
               </p>
             </div>
 
             {/* 3 Pillars */}
             <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80 text-center space-y-3">
+              <div className="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200/90 dark:border-slate-700/80 text-center space-y-3 shadow-xs">
                 <div className="w-12 h-12 mx-auto rounded-xl bg-blue-600/10 text-blue-600 dark:text-blue-400 flex items-center justify-center text-xl">
                   <i className="fa-solid fa-box-archive"></i>
                 </div>
                 <h3 className="font-bold text-base text-slate-900 dark:text-white">اصالت ۱۰۰٪ کالا</h3>
                 <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
-                  تمامی کالاهای موجود در مجموعه با گارانتی اصالت فیزیکی و فاکتور معتبر تقدیم می‌شوند.
+                  تمامی کالاهای موجود در مجموعه با گارانتی اصالت فیزیکی و ضمانت سلامت معتبر تقدیم می‌شوند.
                 </p>
               </div>
 
-              <div className="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80 text-center space-y-3">
+              <div className="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200/90 dark:border-slate-700/80 text-center space-y-3 shadow-xs">
                 <div className="w-12 h-12 mx-auto rounded-xl bg-emerald-600/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-xl">
                   <i className="fa-solid fa-shield-halved"></i>
                 </div>
@@ -118,7 +118,7 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80 text-center space-y-3">
+              <div className="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200/90 dark:border-slate-700/80 text-center space-y-3 shadow-xs">
                 <div className="w-12 h-12 mx-auto rounded-xl bg-purple-600/10 text-purple-600 dark:text-purple-400 flex items-center justify-center text-xl">
                   <i className="fa-solid fa-paper-plane"></i>
                 </div>
@@ -143,9 +143,9 @@ export default function HomePage() {
                 تازه‌ترین تجهیزات دیجیتال
               </h2>
             </div>
-            <div className="text-xs text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
-              <i className="fa-solid fa-info-circle text-blue-500"></i>
-              <span>نمایش کالاهای فروشگاهی با تصاویر باکیفیت WebP</span>
+            <div className="text-xs text-slate-500 dark:text-slate-400 flex items-center gap-1.5 font-medium">
+              <i className="fa-solid fa-layer-group text-blue-500"></i>
+              <span>مجموعه‌ای برگزیده از پرفروش‌ترین محصولات بازار</span>
             </div>
           </div>
 
@@ -158,7 +158,7 @@ export default function HomePage() {
         </section>
 
         {/* Call To Action (CTA) */}
-        <section className="py-14 bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+        <section className="py-14 bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700 text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
             <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md text-2xl mb-2">
               <i className="fa-solid fa-user-shield"></i>
@@ -167,19 +167,19 @@ export default function HomePage() {
               همین امروز به خانواده بزرگ ساده‌مارکت بپیوندید
             </h2>
             <p className="text-sm sm:text-base text-blue-100 max-w-xl mx-auto leading-relaxed">
-              با ایجاد یک حساب کاربری ساده، به راحتی سفارش‌های خود را مدیریت کرده و از آخرین تخفیف‌ها مطلع شوید.
+              با ایجاد یک حساب کاربری، به راحتی سفارش‌های خود را مدیریت کرده و از آخرین تخفیف‌ها مطلع شوید.
             </p>
             <div className="pt-2 flex flex-wrap items-center justify-center gap-4">
               <Link
                 href="/register"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-blue-600 font-bold hover:bg-blue-50 shadow-lg shadow-black/10 transition-all hover:scale-105"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-blue-700 font-bold hover:bg-blue-50 shadow-lg shadow-black/15 transition-all hover:scale-105"
               >
                 <i className="fa-solid fa-user-plus"></i>
-                <span>افتتاح حساب کاربری رایگان</span>
+                <span>افتتاح حساب کاربری</span>
               </Link>
               <Link
                 href="/rules"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-white/30 text-white hover:bg-white/10 font-medium transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-white/40 text-white hover:bg-white/15 font-semibold transition-all"
               >
                 <i className="fa-solid fa-circle-question"></i>
                 <span>مطالعه شرایط و قوانین</span>

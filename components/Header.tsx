@@ -8,46 +8,46 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full backdrop-blur-md bg-white/85 dark:bg-slate-900/85 border-b border-slate-200 dark:border-slate-800 transition-colors">
+    <header className="sticky top-0 z-50 w-full backdrop-blur-md bg-white/90 dark:bg-slate-900/90 border-b border-slate-200 dark:border-slate-800 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Brand / Logo */}
         <div className="flex items-center gap-3">
-          <Link href="/" className="flex items-center gap-2 group">
-            <span className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-500 text-white flex items-center justify-center shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform">
-              <i className="fa-solid fa-bag-shopping text-xl"></i>
+          <Link href="/" className="flex items-center gap-2.5 group">
+            <span className="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center shadow-md shadow-blue-600/30 group-hover:scale-105 transition-transform">
+              <i className="fa-solid fa-bag-shopping text-lg"></i>
             </span>
             <div className="flex flex-col">
-              <span className="font-bold text-lg text-slate-900 dark:text-white tracking-tight">
+              <span className="font-extrabold text-lg text-slate-900 dark:text-white tracking-tight">
                 ساده‌مارکت
               </span>
-              <span className="text-xs text-slate-500 dark:text-slate-400">
-                پروژه فروشگاهی دانشجویی
+              <span className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">
+                فروشگاه اینترنتی تجهیزات مدرن
               </span>
             </div>
           </Link>
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden md:flex items-center gap-7">
           <Link
             href="/"
-            className="flex items-center gap-2 text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            className="flex items-center gap-2 text-sm font-medium text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
-            <i className="fa-solid fa-house text-blue-500"></i>
+            <i className="fa-solid fa-house text-blue-500 text-xs"></i>
             <span>صفحه اصلی</span>
           </Link>
           <Link
             href="/#products"
-            className="flex items-center gap-2 text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            className="flex items-center gap-2 text-sm font-medium text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
-            <i className="fa-solid fa-box-open text-blue-500"></i>
+            <i className="fa-solid fa-box-open text-blue-500 text-xs"></i>
             <span>محصولات</span>
           </Link>
           <Link
             href="/rules"
-            className="flex items-center gap-2 text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            className="flex items-center gap-2 text-sm font-medium text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
-            <i className="fa-solid fa-file-contract text-blue-500"></i>
+            <i className="fa-solid fa-file-contract text-blue-500 text-xs"></i>
             <span>قوانین و شرایط</span>
           </Link>
         </nav>
@@ -55,19 +55,19 @@ export default function Header() {
         {/* Actions (Login / Register / Theme) */}
         <div className="hidden md:flex items-center gap-3">
           <ThemeToggle />
-          <div className="h-6 w-px bg-slate-200 dark:bg-slate-700 mx-1" />
+          <div className="h-6 w-px bg-slate-200 dark:border-slate-800 dark:bg-slate-700 mx-1" />
           <Link
             href="/login"
             className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-xl transition-colors"
           >
-            <i className="fa-solid fa-right-to-bracket text-slate-500 dark:text-slate-400"></i>
+            <i className="fa-solid fa-right-to-bracket text-slate-400 dark:text-slate-400 text-xs"></i>
             <span>ورود</span>
           </Link>
           <Link
             href="/register"
-            className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-xl shadow-sm shadow-blue-500/20 transition-all hover:shadow-md hover:shadow-blue-500/30"
+            className="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl shadow-sm shadow-blue-500/20 transition-all hover:shadow-md"
           >
-            <i className="fa-solid fa-user-plus"></i>
+            <i className="fa-solid fa-user-plus text-xs"></i>
             <span>ثبت‌نام</span>
           </Link>
         </div>
@@ -99,7 +99,7 @@ export default function Header() {
               onClick={() => setMobileMenuOpen(false)}
               className="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 text-sm font-medium"
             >
-              <i className="fa-solid fa-house text-blue-500"></i>
+              <i className="fa-solid fa-house text-blue-500 text-sm"></i>
               <span>صفحه اصلی</span>
             </Link>
             <Link
@@ -107,7 +107,7 @@ export default function Header() {
               onClick={() => setMobileMenuOpen(false)}
               className="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 text-sm font-medium"
             >
-              <i className="fa-solid fa-box-open text-blue-500"></i>
+              <i className="fa-solid fa-box-open text-blue-500 text-sm"></i>
               <span>محصولات</span>
             </Link>
             <Link
@@ -115,7 +115,7 @@ export default function Header() {
               onClick={() => setMobileMenuOpen(false)}
               className="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 text-sm font-medium"
             >
-              <i className="fa-solid fa-file-contract text-blue-500"></i>
+              <i className="fa-solid fa-file-contract text-blue-500 text-sm"></i>
               <span>قوانین و شرایط</span>
             </Link>
           </div>
@@ -123,15 +123,15 @@ export default function Header() {
             <Link
               href="/login"
               onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 rounded-xl"
+              className="flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800"
             >
-              <i className="fa-solid fa-right-to-bracket text-slate-500 dark:text-slate-400"></i>
+              <i className="fa-solid fa-right-to-bracket text-slate-400"></i>
               <span>ورود به حساب</span>
             </Link>
             <Link
               href="/register"
               onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-xl shadow-sm"
+              className="flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-blue-600 rounded-xl shadow-sm"
             >
               <i className="fa-solid fa-user-plus"></i>
               <span>ایجاد حساب کاربری</span>

@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "ساده‌مارکت — فروشگاه اینترنتی ساده و مینیمال",
-  description: "پروژه فروشگاهی مینیمال فارسی برای ارائه پروژه‌های دانشجویی و دانشگاهی با Next.js",
+  description: "فروشگاه اینترنتی مدرن، سریع و مینیمال با رابط کاربری فارسی و طراحی استاندارد",
 };
 
 export default function RootLayout({
