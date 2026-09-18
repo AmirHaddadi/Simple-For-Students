@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 export interface Product {
   id: number;
@@ -9,6 +10,7 @@ export interface Product {
   price: string;
   rating: number;
   icon: string;
+  image?: string;
   tag?: string;
   description: string;
 }
@@ -27,17 +29,28 @@ export default function ProductCard({ product }: ProductCardProps) {
 
   return (
     <div className="flex flex-col bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden shadow-sm hover:shadow-md hover:border-blue-500/50 dark:hover:border-blue-500/50 transition-all duration-200 group">
-      {/* Product Image placeholder */}
-      <div className="relative w-full aspect-4/3 bg-slate-100 dark:bg-slate-900/80 flex items-center justify-center p-6 border-b border-slate-100 dark:border-slate-700/50 overflow-hidden">
+      {/* Product Image */}
+      <div className="relative w-full aspect-4/3 bg-slate-100 dark:bg-slate-900/80 flex items-center justify-center border-b border-slate-100 dark:border-slate-700/50 overflow-hidden">
         {product.tag && (
-          <span className="absolute top-3 right-3 px-2.5 py-1 rounded-lg bg-blue-600/90 text-white text-[11px] font-semibold flex items-center gap-1 backdrop-blur-xs">
+          <span className="absolute top-3 right-3 z-10 px-2.5 py-1 rounded-lg bg-blue-600/90 text-white text-[11px] font-semibold flex items-center gap-1 backdrop-blur-xs shadow-xs">
             <i className="fa-solid fa-tag text-[9px]"></i>
             <span>{product.tag}</span>
           </span>
         )}
-        <div className="w-16 h-16 rounded-2xl bg-white dark:bg-slate-800 shadow-sm border border-slate-200 dark:border-slate-700 flex items-center justify-center text-blue-600 dark:text-blue-400 text-3xl group-hover:scale-110 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-all">
-          <i className={product.icon}></i>
-        </div>
+        
+        {product.image ? (
+          <Image
+            src={product.image}
+            alt={product.title}
+            fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+        ) : (
+          <div className="w-16 h-16 rounded-2xl bg-white dark:bg-slate-800 shadow-sm border border-slate-200 dark:border-slate-700 flex items-center justify-center text-blue-600 dark:text-blue-400 text-3xl group-hover:scale-110 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-all">
+            <i className={product.icon}></i>
+          </div>
+        )}
       </div>
 
       {/* Product Info */}

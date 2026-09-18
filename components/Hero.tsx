@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -65,24 +66,22 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Hero Visual Card */}
+          {/* Hero Visual Card with WebP Image */}
           <div className="lg:col-span-5 flex justify-center">
-            <div className="relative w-full max-w-md p-6 bg-white dark:bg-slate-800 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-700">
-              <div className="w-full aspect-4/3 rounded-xl bg-gradient-to-br from-blue-500/10 via-indigo-500/10 to-purple-500/10 dark:from-blue-950/40 dark:to-indigo-950/40 border border-slate-200/60 dark:border-slate-700/60 flex flex-col items-center justify-center p-6 text-center">
-                <div className="w-20 h-20 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-3xl shadow-lg shadow-blue-500/30 mb-4 animate-pulse">
-                  <i className="fa-solid fa-store"></i>
-                </div>
-                <h3 className="font-bold text-slate-900 dark:text-white text-lg mb-1">
-                  پلتفرم نمایشی فروشگاه
-                </h3>
-                <p className="text-xs text-slate-500 dark:text-slate-400">
-                  سادگی در طراحی، زیبایی در رابط کاربری
-                </p>
+            <div className="relative w-full max-w-md p-3 bg-white dark:bg-slate-800 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-700">
+              <div className="relative w-full aspect-4/3 rounded-xl overflow-hidden border border-slate-200/60 dark:border-slate-700/60 bg-slate-100 dark:bg-slate-900">
+                <Image
+                  src="/images/hero.webp"
+                  alt="پیشخوان ساده‌مارکت"
+                  fill
+                  priority
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                />
               </div>
 
               {/* Floating Feature cards */}
-              <div className="mt-4 grid grid-cols-2 gap-3">
-                <div className="flex items-center gap-3 p-3 rounded-xl bg-slate-50 dark:bg-slate-700/50 border border-slate-200/80 dark:border-slate-700">
+              <div className="mt-3 grid grid-cols-2 gap-2.5">
+                <div className="flex items-center gap-2.5 p-2.5 rounded-xl bg-slate-50 dark:bg-slate-700/50 border border-slate-200/80 dark:border-slate-700">
                   <span className="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-sm">
                     <i className="fa-solid fa-truck-fast"></i>
                   </span>
@@ -92,7 +91,7 @@ export default function Hero() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 p-3 rounded-xl bg-slate-50 dark:bg-slate-700/50 border border-slate-200/80 dark:border-slate-700">
+                <div className="flex items-center gap-2.5 p-2.5 rounded-xl bg-slate-50 dark:bg-slate-700/50 border border-slate-200/80 dark:border-slate-700">
                   <span className="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center text-sm">
                     <i className="fa-solid fa-headset"></i>
                   </span>

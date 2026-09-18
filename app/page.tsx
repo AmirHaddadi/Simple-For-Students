@@ -12,6 +12,7 @@ const sampleProducts: Product[] = [
     price: "۳,۸۵۰,۰۰۰",
     rating: 4.8,
     icon: "fa-solid fa-headphones",
+    image: "/images/product-1.webp",
     tag: "پرفروش",
     description: "تفکیک صدای بی‌نظیر، باتری با دوام ۳۰ ساعت و سیستم حذف نویز فعال پیشرفته.",
   },
@@ -22,6 +23,7 @@ const sampleProducts: Product[] = [
     price: "۲,۲۹۰,۰۰۰",
     rating: 4.6,
     icon: "fa-solid fa-clock",
+    image: "/images/product-2.webp",
     tag: "ویژه",
     description: "نمایشگر همیشه روشن AMOLED، سنجش ضربان قلب و اکسیژن خون و مقاومت در برابر آب.",
   },
@@ -32,6 +34,7 @@ const sampleProducts: Product[] = [
     price: "۱,۹۵۰,۰۰۰",
     rating: 4.9,
     icon: "fa-solid fa-keyboard",
+    image: "/images/product-3.webp",
     tag: "پیشنهاد ما",
     description: "سوییچ‌های قرمز نرم، نورپردازی قابل تنظیم و کابل جداشونده تایپ‌سی.",
   },
@@ -42,6 +45,7 @@ const sampleProducts: Product[] = [
     price: "۱,۱۵۰,۰۰۰",
     rating: 4.7,
     icon: "fa-solid fa-computer-mouse",
+    image: "/images/product-4.webp",
     description: "طراحی کاملاً هماهنگ با ساختار دست جهت جلوگیری از خستگی مچ در ساعات کاری طولانی.",
   },
   {
@@ -51,6 +55,7 @@ const sampleProducts: Product[] = [
     price: "۱,۶۰۰,۰۰۰",
     rating: 4.5,
     icon: "fa-solid fa-battery-three-quarters",
+    image: "/images/product-5.webp",
     tag: "تخفیف",
     description: "پشتیبانی از فناوری شارژ سریع PD با توان خروجی ۳۰ وات و بدنه آلومینیومی مقاوم.",
   },
@@ -61,6 +66,7 @@ const sampleProducts: Product[] = [
     price: "۲,۴۰۰,۰۰۰",
     rating: 4.7,
     icon: "fa-solid fa-volume-high",
+    image: "/images/product-6.webp",
     description: "صدای ۳۶۰ درجه شفاف، استاندارد ضد آب IPX7 و قابلیت اتصال دو اسپیکر همزمان.",
   },
 ];
@@ -139,7 +145,7 @@ export default function HomePage() {
             </div>
             <div className="text-xs text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
               <i className="fa-solid fa-info-circle text-blue-500"></i>
-              <span>نمایش نمونه کالاهای استاتیک دانشگاهی</span>
+              <span>نمایش کالاهای فروشگاهی با تصاویر باکیفیت WebP</span>
             </div>
           </div>
 
