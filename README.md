@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ساده‌مارکت (Simple Persian E-Commerce) — پروژه دانشجویی
 
-## Getting Started
+یک وب‌سایت فروشگاه اینترنتی بسیار ساده، زیبا، مدرن و راست‌چین (RTL) به زبان فارسی که به صورت ویژه برای ارائه در پروژه‌های درسی و کلاسی دانشگاهی طراحی و توسعه یافته است.
 
-First, run the development server:
+---
+
+## 🌟 ویژگی‌های کلیدی
+
+* **کاملاً واکنش‌گرا (Responsive):** سازگاری کامل با موبایل، تبلت و دسکتاپ
+* **راست‌چین اصولی (RTL):** استفاده از چیدمان استاندارد و فونت فارسی زیبای شبنم
+* **آیکون‌های لوکال (Font Awesome):** بدون وابستگی به CDN خارجی؛ تمامی برچسب‌ها و دکمه‌ها مجهز به آیکون متناسب هستند.
+* **حالت شب و روز (Dark / Light Theme):** جابجایی نرم تم همراه با ذخیره‌سازی انتخاب کاربر در `localStorage`
+* **معماری بدون سرور (Zero-Backend):** بدون نیاز به Database ،API یا سرویس‌های پیچیده احراز هویت
+* **صفحات اصلی:**
+  * صفحه نخست و لندینگ (شامل معرفی، بنر و کارت‌های نمونه محصولات)
+  * ورود به سیستم (`/login`)
+  * ثبت‌نام کاربر (`/register`)
+  * قوانین و شرایط استفاده (`/rules`)
+
+---
+
+## 🛠 تکنولوژی‌های استفاده‌شده
+
+* **Node.js** (محیط اجرا)
+* **Next.js 16 (App Router)**
+* **React 19**
+* **TypeScript**
+* **TailwindCSS v4**
+* **Font Awesome (لوکالیزه‌شده)**
+* **فونت فارسی شبنم**
+
+---
+
+## 🚀 نحوه نصب و راه‌اندازی سریع
+
+### ۱. کلون ریپازیتوری
+
+```bash
+git clone https://github.com/AmirHaddadi/Simple-For-Students.git
+cd Simple-For-Students
+```
+
+### ۲. نصب پکیج‌ها
+
+```bash
+npm install
+```
+
+### ۳. اجرای پروژه در حالت توسعه
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+پروژه به صورت پیش‌فرض در آدرس زیر در دسترس خواهد بود:
+[http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### ۴. ساخت نسخه نهایی (Production Build)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 ساختار پوشه‌ها و مستندات
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+برای اطلاعات تکمیلی در مورد جزییات پروژه به پوشه `docs/` مراجعه فرمایید:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* [ساختار کامل پروژه (docs/project-structure.md)](./docs/project-structure.md)
+* [راهنمای نصب و راه‌اندازی (docs/setup.md)](./docs/setup.md)
+* [معرفی صفحات (docs/pages.md)](./docs/pages.md)
+* [معرفی کامپوننت‌ها (docs/components.md)](./docs/components.md)
+* [سازوکار تم روشن و تاریک (docs/theme.md)](./docs/theme.md)
+* [پرامپت‌های تولید تصویر هوش مصنوعی (docs/image-prompts/)](./docs/image-prompts/)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 👤 توسعه‌دهنده
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* **توسعه‌دهنده:** امیر حدادی ([AmirHaddadi](https://github.com/AmirHaddadi))
+* **ریپازیتوری:** [Simple-For-Students](https://github.com/AmirHaddadi/Simple-For-Students.git)
