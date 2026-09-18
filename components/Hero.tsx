@@ -3,16 +3,16 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden py-16 md:py-24 bg-slate-50/50 dark:bg-[#070b14] border-b border-slate-200/80 dark:border-slate-800/80">
-      {/* Subtle background ambient glows */}
-      <div className="absolute top-1/4 -right-32 w-96 h-96 bg-blue-500/10 dark:bg-blue-600/15 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 -left-32 w-96 h-96 bg-indigo-500/10 dark:bg-indigo-600/15 rounded-full blur-3xl pointer-events-none" />
+    <section className="relative overflow-hidden py-16 md:py-24 bg-gradient-to-b from-slate-100/70 via-slate-50/40 to-white dark:from-[#030712] dark:via-[#050b18] dark:to-[#080e1c] border-b border-slate-200/80 dark:border-slate-800/80">
+      {/* Subtle deep ambient glow for high contrast in dark mode */}
+      <div className="absolute top-1/4 -right-32 w-96 h-96 bg-blue-600/10 dark:bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 -left-32 w-96 h-96 bg-indigo-600/10 dark:bg-indigo-600/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Text Content */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-right">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800/50 text-blue-700 dark:text-blue-300 text-xs font-semibold shadow-xs">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 dark:bg-blue-950/70 border border-blue-200 dark:border-blue-800/60 text-blue-700 dark:text-blue-300 text-xs font-semibold shadow-xs">
               <i className="fa-solid fa-sparkles text-blue-600 dark:text-blue-400"></i>
               <span>فروشگاه مدرن و پیشرو در لوازم دیجیتال</span>
             </div>
@@ -72,9 +72,9 @@ export default function Hero() {
 
           {/* Right Frame in Glassmorphism Container with smooth webkit blur */}
           <div className="lg:col-span-5 flex justify-center">
-            <div className="w-full max-w-md p-4 rounded-3xl bg-white/70 dark:bg-slate-900/50 backdrop-blur-xl backdrop-saturate-150 border border-white/60 dark:border-slate-700/50 shadow-xl dark:shadow-2xl dark:shadow-black/60 transition-all duration-300 hover:border-blue-500/30">
+            <div className="w-full max-w-md p-4 rounded-3xl bg-white/80 dark:bg-[#0c1324]/80 backdrop-blur-xl backdrop-saturate-150 border border-slate-200/80 dark:border-slate-700/60 shadow-xl dark:shadow-2xl dark:shadow-black/70 transition-all duration-300 hover:border-blue-500/40">
               {/* Product Image Frame */}
-              <div className="relative w-full aspect-4/3 rounded-2xl overflow-hidden border border-slate-200/80 dark:border-slate-800 bg-slate-100 dark:bg-slate-950/80 shadow-inner">
+              <div className="relative w-full aspect-4/3 rounded-2xl overflow-hidden border border-slate-200/80 dark:border-slate-750 bg-slate-100 dark:bg-slate-950 shadow-inner">
                 <Image
                   src="/images/hero.webp"
                   alt="پیشخوان ساده‌مارکت"
@@ -86,7 +86,7 @@ export default function Hero() {
 
               {/* Sub-cards container */}
               <div className="mt-3.5 grid grid-cols-2 gap-3">
-                <div className="flex items-center gap-3 p-3 rounded-2xl bg-white/80 dark:bg-slate-800/60 backdrop-blur-md border border-slate-200/70 dark:border-slate-700/60 shadow-xs">
+                <div className="flex items-center gap-3 p-3 rounded-2xl bg-white/90 dark:bg-[#131c33]/80 backdrop-blur-md border border-slate-200/80 dark:border-slate-700/70 shadow-xs">
                   <span className="w-9 h-9 rounded-xl bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-sm shrink-0">
                     <i className="fa-solid fa-truck-fast"></i>
                   </span>
@@ -96,7 +96,7 @@ export default function Hero() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 p-3 rounded-2xl bg-white/80 dark:bg-slate-800/60 backdrop-blur-md border border-slate-200/70 dark:border-slate-700/60 shadow-xs">
+                <div className="flex items-center gap-3 p-3 rounded-2xl bg-white/90 dark:bg-[#131c33]/80 backdrop-blur-md border border-slate-200/80 dark:border-slate-700/70 shadow-xs">
                   <span className="w-9 h-9 rounded-xl bg-blue-500/15 text-blue-600 dark:text-blue-400 flex items-center justify-center text-sm shrink-0">
                     <i className="fa-solid fa-headset"></i>
                   </span>
